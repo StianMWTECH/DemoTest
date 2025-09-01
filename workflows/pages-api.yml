@@ -2,7 +2,7 @@ name: Build & Deploy API (Pages)
 
 on:
   push:
-    paths: ["data/**", "tools/**", ".github/workflows/**"]
+    paths: ["data/**", "tools/**", "/workflows/**"]
   workflow_dispatch: {}
 
 permissions:
