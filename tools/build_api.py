@@ -114,6 +114,9 @@ def build():
         days.append(day)
 
         rows = read_headerless_nav(p)
+        
+        for r in rows:
+            r["Day"] = day
 
         # Per-day summary
         day_summary, by_cnty = summarize(rows)
